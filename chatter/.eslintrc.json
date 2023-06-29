@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "airbnb-typescript",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/typescript",
+    "plugin:cypress/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["**/*.config.js"],
+  "overrides": [
+    {
+      "files": ["*.tailwind.config.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {}
+    }
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint", "prettier", "react-hooks", "import"],
+  "rules": {
+    "consistent-return": "off",
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/ban-ts-comment": ["off"],
+    "ts-ignore": 0,
+    "@typescript-eslint/quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ]
+  }
+}
