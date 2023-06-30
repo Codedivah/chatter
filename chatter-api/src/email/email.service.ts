@@ -10,7 +10,7 @@ const CLOUD_CLIENT_ID =
 const CLOUD_CLIENT_SECRET = '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';
 
 const CLOUD_REFRESH_TOKEN =
- '1//04x8bHtb2sB0XCgYIARAAGAQSNwF-L9IrCqHmg935MFDMGK9fkUCIUZWlRmvNuad9iaWtw38JLyTNp88zBGR34ZUK_6T8LnSGMiY' ;
+ '1//045wviOFmC8LbCgYIARAAGAQSNwF-L9IryJSzvZSeRXcGJ559jJAB3mBEkENPSgFXQRBSyKwx81gckWkZwPvihETx-nuYY32avUY' ;
 
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
 
@@ -21,7 +21,7 @@ const OAuth2Client = new OAuth2(
 );
 OAuth2Client.setCredentials({
   refresh_token:
-    '1//04x8bHtb2sB0XCgYIARAAGAQSNwF-L9IrCqHmg935MFDMGK9fkUCIUZWlRmvNuad9iaWtw38JLyTNp88zBGR34ZUK_6T8LnSGMiY',
+    '1//045wviOFmC8LbCgYIARAAGAQSNwF-L9IryJSzvZSeRXcGJ559jJAB3mBEkENPSgFXQRBSyKwx81gckWkZwPvihETx-nuYY32avUY',
 });
 
 const accessToken = OAuth2Client.getAccessToken();
